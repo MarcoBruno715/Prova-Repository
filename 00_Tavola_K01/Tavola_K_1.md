@@ -1,8 +1,8 @@
 ## Per ogni argomento inserire una breve spiegazione ed alcuni esempi di utilizzo ed un link alla documentazione
 
-/************************************************************************************************************************
- ## I fondamenti di c# in ambiente DOTNET con Visual Studio Code
- ************************************************************************************************************************/
+
+## I fondamenti di c# in ambiente DOTNET con Visual Studio Code
+ 
 
  // C# è un linguaggio di programmazione orientato a oggetti e indipendenti dai tipi.
  // Permette di compilare molti tipi di applicazioni eseguite in .NET
