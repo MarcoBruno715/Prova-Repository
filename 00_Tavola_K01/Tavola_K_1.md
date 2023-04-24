@@ -23,65 +23,88 @@
  // Le variabili vanno sempre dichiarate e inizializzata
 
  // Il primo carattere può essere una lettera,l'underscore (_) oppure l'at(@)
- 
+
  // Termina le istruzioni con ";"
 
  
  // ***Prima di usare c# con viasul studio code bisogna installare il plugin sul pannello estensioni e il freamwork.NET core***
 
  // per eseguire il codice in Visual Studio Code è necessario installare il plugin C# di Microsoft
+
  // per installare il plugin C# di Microsoft è necessario aprire il pannello estensioni (Ctrl + Shift + X)
+
  // e cercare il plugin C# di Microsoft
 
 // per eseguire il codice in Visual Studio Code è necessario installare il framework .NET Core
-// per installare il framework .NET Core andare su
-// https://dotnet.microsoft.com/en-us/download/dotnet
+
+// per installare il framework .NET Core andare su https://dotnet.microsoft.com/en-us/download/dotnet
+
 // Scaricare Preferibilmente l'ultima versione supportata
 
 // digitare il comando "dotnet --version" per verificare che il framework .NET Core sia installato
 
 // ci sono altre estensioni utili per Visual Studio Code per programmare in C# in ambiente DOTNET
+
 // per installare le estensioni utili per Visual Studio Code per programmare in C# in ambiente DOTNET
+
 // aprire il pannello estensioni (Ctrl + Shift + X) e cercare le estensioni
 
 // ASP.NET Core Snippets (per creare file di configurazione per progetti ASP.NET Core)
+
 // C# (per programmare in C#)
+
 // C# Extensions (per programmare in C#)
+
 // C# Snippets (per programmare in C#)
 
 // comandi utili per Visual Studio Code per programmare in C# in ambiente DOTNET
 
 // Ctrl + Shift + B (per compilare il codice)
+
 // Ctrl + F5 (per eseguire il codice)
+
 // Ctrl + Shift + ì (per aprire la console)
+
 // Ctrl + C (per interrompere l'esecuzione del codice)
+
 // Ctrl + Shift + X (per aprire il pannello estensioni)
+
 // Ctrl + Shift + P (per aprire il pannello comandi)
 
 // per visualizzare quali template sono disponibili per creare un progetto in Visual Studio Code
+
 // e digitare il comando "dotnet new"
 
 // per creare un progetto console in Visual Studio Code è necessario aprire il pannello comandi (Ctrl + Shift + P)
+
 // e digitare il comando "dotnet new console"
 
 // i principali progetti che si possono creare con Visual Studio Code in ambiente DOTNET sono:
 
 // console (per creare un progetto console)
+
 // web (per creare un progetto web)
+
 // mvc (per creare un progetto web mvc)
+
 // angular (per creare un progetto web angular)
+
 // react (per creare un progetto web react)
 
 // per ogni esercizio reare una cartella con il nome dell'esercizio ed aprirla nel terminale di Visual Studio Code
 
 // per eseguire il codice in Visual Studio Code è necessario aprire il pannello comandi (Ctrl + Shift + P)
+
 // e digitare il comando "dotnet run"
 
 // per compilare il codice in Visual Studio Code è necessario aprire il pannello comandi (Ctrl + Shift + P)
+
 // e digitare il comando "dotnet build"
 
 // la differenza tra eseguire e compilare il codice è che il codice compilato viene eseguito dal sistema operativo
+
 // mentre il codice eseguito viene eseguito dal framework .NET Core
+
 // Il codice compilato è più veloce da eseguire
 
 Link documentazione
