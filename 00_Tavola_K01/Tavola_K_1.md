@@ -1,7 +1,7 @@
-Per ogni argomento inserire una breve spiegazione ed alcuni esempi di utilizzo ed un link alla documentazione
+## Per ogni argomento inserire una breve spiegazione ed alcuni esempi di utilizzo ed un link alla documentazione
 
 /************************************************************************************************************************
- * // i fondamenti di c# in ambiente DOTNET con Visual Studio Code                                                      *
+ ## I fondamenti di c# in ambiente DOTNET con Visual Studio Code
  ************************************************************************************************************************/
 
  // C# è un linguaggio di programmazione orientato a oggetti e indipendenti dai tipi.
@@ -19,7 +19,7 @@ Per ogni argomento inserire una breve spiegazione ed alcuni esempi di utilizzo e
  // Termina le istruzioni con ";"
 
  
- // Prima di usare c# con viasul studio code bisogna installare il plugin sul pannello estensioni e il freamwork.NET core
+ // ***Prima di usare c# con viasul studio code bisogna installare il plugin sul pannello estensioni e il freamwork.NET core***
 
  // per eseguire il codice in Visual Studio Code è necessario installare il plugin C# di Microsoft
  // per installare il plugin C# di Microsoft è necessario aprire il pannello estensioni (Ctrl + Shift + X)
@@ -78,11 +78,11 @@ Per ogni argomento inserire una breve spiegazione ed alcuni esempi di utilizzo e
 
 Link documentazione
 
-https://learn.microsoft.com/it-it/dotnet/csharp/tour-of-csharp/
+`https://learn.microsoft.com/it-it/dotnet/csharp/tour-of-csharp/`
 
 
 /***********************************************************************************************************************
- * // la console è una finestra che permette di visualizzare dei messaggi                                               *
+ ## la console è una finestra che permette di visualizzare dei messaggi                                            *
  ************************************************************************************************************************/
 
 // La console permette di comunicare con il programma , Attraverso l'input dell'utente , la console mostra tramite una finestra 
@@ -94,20 +94,20 @@ https://learn.microsoft.com/it-it/dotnet/csharp/tour-of-csharp/
 // La console si apre con Ctrl + shift +i
 // la console di Visual Studio Code si interrompe con Ctrl + C
 
-per interagire con la console si usano i metodi della classe Console
+__per interagire con la console si usano i metodi della classe Console__
 
  esempi di comandi  console : 
- 
+ ```c#
  Console.WriteLine("Hello, World!"); Con questo comando andiamo a dire alla console di scrivere il messaggio Ciao Mondo !
 
  Console.ReadLine(); Legge l'inpuput dell 'utente con apposito comando
 
- Console.ReadKey(); (per leggere un tasto)
+ Console.ReadKey(); ///per leggere un tasto
 
- Console.Clear();  (per pulire la console)
+ Console.Clear();  //per pulire la console
 
- Console.Beep(); (per far suonare il pc)
-
+ Console.Beep(); //per far suonare il pc
+```
  Per creare una console si usa il comando "\\dotnet New Console//" , questo perche crea i file necessari per utilizzare i file .cs
 
  Link documentazione
@@ -116,7 +116,7 @@ per interagire con la console si usano i metodi della classe Console
 
 
 /***********************************************************************************************************************
- * // i commenti sono utili per spiegare il codice                                                                     *
+ ## i commenti sono utili per spiegare il codice                                                                     *
  ***********************************************************************************************************************/
 
 I commenti sono molto utili per spiegare una determinata linea di condice.
@@ -124,16 +124,17 @@ E' di buona norma scrivere il commento sopra alla riga del codice
 Il commento per buona prassi va scritto in inglese
 Sarebbe meglio non scriverlo di fianco al codice questo perche se hai molto da scrivere , il testo può finire fuori dalla schermata di lavoro e risulta scomodo da leggerlo
 Esmpio:
-Il commento si esprime tramite le due //
+```c#                               
+Il commento si esprime tramite le due  // Prova Commento
 Se si vuole scrivere un commento su più righe si usa /* per iniziaere  e finire */
-Con piu simboli ///// Crei una barra sul commento
-
+Con piu simboli /////// Crei una barra sul commento
+```
 Link documentazione
-https://learn.microsoft.com/it-it/dotnet/csharp/language-reference/language-specification/documentation-comments
+`https://learn.microsoft.com/it-it/dotnet/csharp/language-reference/language-specification/documentation-comments`
 
 
 /***********************************************************************************************************************
- * // le istruzioni sono dei comandi che vengono eseguiti                                                              *
+ ## le istruzioni sono dei comandi che vengono eseguiti                                                              *
  ***********************************************************************************************************************/
 
 
@@ -153,18 +154,22 @@ Le azioni comuni includono:
  Un blocco di istruzioni è racchiuso tra parentesi {} e può contenere blocchi annidati. 
 
  esempio di istruzione
+ ```c# 
  int a = 1;
-
+```
  le istruzioni possono essere composte da più righe
 
  esempio di istruzione composta da più righe
+
+ ```c#
  int a = 1;
  a = a + 1;
-
+```
  chiede all'utente di inserire un numero e lo stampa:
+ ```c#
  int a = int.Parse(Console.ReadLine());
  Console.WriteLine(a);
-
+```
  int è il tipo di dato di a
  int.Parse è il metodo che converte una stringa in un numero intero
  Console.ReadLine è il metodo che legge una stringa
@@ -176,82 +181,87 @@ https://learn.microsoft.com/it-it/dotnet/csharp/programming-guide/statements-exp
 
 
 /***********************************************************************************************************************
- * // i dati sono contenuti in variabili e costanti                                                                    *
+ ## i dati sono contenuti in variabili e costanti                                                                    *
  ***********************************************************************************************************************/
 
-Esistono vari tipi di dati:
+**Esistono vari tipi di dati:**
 Tipi interi
 Tipi decimali e float
 Tipi stringa
 Tipi booleani
  
-Per rappresentare numeri reali possiamo usare i tipi floating e decimali. 
+__Per rappresentare numeri reali possiamo usare i tipi floating e decimali.__
 Se vogliamo usare un numero in virgola con precisione a 7 cifre decimali usiamo il tipo float. Il float si usa quando non si vuole un dato presciso
-
 Se invece vogliamo gestire numeri con virgola a 15 - 16 cifre usiamo il tipo double; Il double viene usato quando si vuole un dato leggermente piu preciso , usato nei database scientifici 
-
 per numeri con cifre dopo la virgola di 28 - 29 cifre usiamo il tipo decimal, che è quello che occupa più memoria (128 bit) e è il piu preciso , usato nelle bance 
 
-i principali tipi di dati semplici:
+**i principali tipi di dati semplici:**
 
 numeri interi (int)
+```c#
 int a = 1;
 int b = 2;
 int c = a + b;
-
+```
 numeri decimali (double)
+```c#
 double d = 1.5;
 double e = 2.5;
 double f = d + e;
-
+```
 stringhe (string)
+```c#
 string s = "ciao";
 string t = "mondo";
 string u = s + " " + t;
-
+```
 booleani (bool)
+```c#
 bool v = true;
 bool w = false;
 bool x = v && w;
-
+```
 le principali strutture dati:
 
 array di numeri interi
+```c#
 int[] y = new int[3];y[0] = 1;
 y[1] = 2;
 y[2] = 3;
-
+```
 scegliere la dimensione dell'array
+```c#
 int[] y = new int[3];
 
-scegliere i valori dell'array
+//scegliere i valori dell'array
 int[] y = { 1, 2, 3 };
 
-array di stringhe
+//array di stringhe
 string[] z = new string[3];
 z[0] = "ciao";
 z[1] = "mondo";
 
-liste
+//liste
 List<int> aa = new List<int>();
 aa.Add(1);
 aa.Add(2);
 aa.Add(3);
 
-liste di stringhe
+//liste di stringhe
 List<string> bb = new List<string>();
 bb.Add("ciao");
 bb.Add("mondo");
-la differenza principale tra array e liste è che le liste possono essere modificate mentre gli array no
-le liste hanno più metodi di array
-le liste sono più lente degli array ma più veloci delle strutture dati più complesse
 
+// la differenza principale tra array e liste è che le liste possono essere modificate mentre gli array no
+// le liste hanno più metodi di array
+// le liste sono più lente degli array ma più veloci delle strutture dati più complesse
+```
  è possibile trovare altre informazioni su dati su
- https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/language-specification/types
+ `https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/language-specification/types`
 
 
 /***********************************************************************************************************************
- * // le variabili sono dei contenitori che possono contenere un valore                                                *
+ ## le variabili sono dei contenitori che possono contenere un valore                                                *
  ***********************************************************************************************************************/
 
 le variabili si dichiarano con il tipo di dato seguito dal nome della variabile
@@ -271,7 +281,7 @@ https://learn.microsoft.com/it-it/dotnet/framework/windows-workflow-foundation/v
 
 
 /***********************************************************************************************************************
- * // le costanti sono simili alle variabili, ma non possono essere modificate                                         *
+ ## le costanti sono simili alle variabili, ma non possono essere modificate                                         *
  ***********************************************************************************************************************/
 
 Le costanti sono dei valori che non possono essere modificati  dal programma o dall'utente 
@@ -281,31 +291,32 @@ Sono il contrario delle variabili.
 Le costanti vengono dichiarate con il modificatore const.
 
 Esempi 
-
+```c#
 class Calendar1
 {
      const int Mese = 12;
 }
-
+```
 In questo caso abbiamo dichiarato una costante int chiamata Mese e gli abbiamo assegnato un valore 12
 
 Si posso anche creare piu costanti sulla stessa riga 
 
-
+```c#
 class Calendar2
 {
      int Mese = 12, Weeks = 52, Days = 365;
 }
-
+```
 le costanti si dichiarano con il tipo di dato seguito da const e dal nome della costante
 le costanti si inizializzano con il tipo di dato seguito da const e dal nome della costante e il valore da assegnare
 le costanti possono essere dichiarate e inizializzate in un'unica riga
 esempio di costante dichiarata e inizializzata in un'unica riga
 
+```c#
 const int a = 1;
-esempio di costante
+// esempio di costante
 const int a = 1;
-
+```
 dizionari (servono per associare una chiave ad un valore)
 Dictionary<string, int> cc = new Dictionary<string, int>();
 cc.Add("ciao", 1);
@@ -321,7 +332,7 @@ https://learn.microsoft.com/it-it/dotnet/csharp/programming-guide/classes-and-st
 
 
 /***********************************************************************************************************************
- * // gli operatori sono simboli che permettono di eseguire delle operazioni                                           *
+ ## gli operatori sono simboli che permettono di eseguire delle operazioni                                           *
  **********************************************************************************************************************
 
  Un elemento fondamentale in un linguaggio di programmazione sono gli operatori.
@@ -393,7 +404,7 @@ Link documentazione
  https://learn.microsoft.com/it-it/dotnet/csharp/language-reference/operators/
 
 /***********************************************************************************************************************
- * // le conditioni sono composte da istruzioni di controllo                                                           *
+ ## le conditioni sono composte da istruzioni di controllo                                                           *
  ***********************************************************************************************************************/
 
 //Le istruzioni condizionali, in qualsiasi linguaggio di programmazione, permettono di verificare determinate condizioni come ad esempio l'uguaglianza, 
@@ -523,7 +534,7 @@ https://learn.microsoft.com/it-it/dotnet/csharp/language-reference/statements/se
 
 
 /***********************************************************************************************************************
- * // i metodi sono le funzioni delle classi si utilizzano per eseguire delle azioni e ritornano un valore             *
+ ## i metodi sono le funzioni delle classi si utilizzano per eseguire delle azioni e ritornano un valore             *
  ***********************************************************************************************************************/
 
 // Un metodo è un blocco di codice che contiene una serie di istruzioni.
@@ -550,7 +561,7 @@ return a + b;
 https://learn.microsoft.com/it-it/dotnet/csharp/programming-guide/classes-and-structs/methods
 
 /***********************************************************************************************************************
- * // le classi sono dei contenitori che contengono metodi, variabili e costanti                                       *
+ ## le classi sono dei contenitori che contengono metodi, variabili e costanti                                       *
  ***********************************************************************************************************************/
 
 Le classi sono alla base di ogni linguaggio di programmazione orientato agli oggetti e ha la caratteristica di definire un insieme 
@@ -588,7 +599,7 @@ int a = 1;
  https://learn.microsoft.com/it-it/dotnet/csharp/fundamentals/types/classes
 
 /***********************************************************************************************************************
- * // gli oggetti sono delle istanze delle classi                                                                      *
+ ## gli oggetti sono delle istanze delle classi                                                                      *
  ***********************************************************************************************************************/
 
  Si puo' considerare le istanze di una classe, ovvero gli oggetti che realizzano il concetto di classe, come variabili definite
@@ -616,7 +627,7 @@ int a = 1;
 
 
 /***********************************************************************************************************************
- * // i namespace sono dei contenitori che contengono classi, metodi, variabili e costanti                             *
+ ## i namespace sono dei contenitori che contengono classi, metodi, variabili e costanti                             *
  ***********************************************************************************************************************/
 
 I namespace vengono usati in C# per organizzare e fornire un livello di separazione dei codici. Possono essere considerati come un contenitore costituito da altri spazi dei nomi, classi, ecc.
