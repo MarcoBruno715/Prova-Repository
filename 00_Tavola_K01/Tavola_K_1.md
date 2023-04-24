@@ -2,18 +2,28 @@
 ## I fondamenti di c# in ambiente DOTNET con Visual Studio Code
  
  // C# è un linguaggio di programmazione orientato a oggetti e indipendenti dai tipi
- 
+
  // Permette di compilare molti tipi di applicazioni eseguite in .NET
+
  // C# fa parte della famiglia dei linguaggi C
+
  // I programmi C# vengono eseguiti in  .NET, un sistema di esecuzioni virtuale denominato CLR e un set di librerie di classi
+
  // Common Language Runtime (CLR)
+
  // La principlale caratteristica è la sua portabilità , un programma compilato con c# produce un file IL (Intermediate Language)
     che può essere copiato da una macchina all'altra 
+
  // Esso non può essere eseguito direttamente ma tramite il CLR 
+
  // Il CLR quindi compila solo la parte di codice che deve essere eseguita e l’esito della compilazione è il Just In Time (JIT) o jitting
+
  // IL C# è case sensitive
+
  // Le variabili vanno sempre dichiarate e inizializzata
+
  // Il primo carattere può essere una lettera,l'underscore (_) oppure l'at(@)
+ 
  // Termina le istruzioni con ";"
 
  
