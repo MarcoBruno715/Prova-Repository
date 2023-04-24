@@ -2,6 +2,7 @@
 ## I fondamenti di c# in ambiente DOTNET con Visual Studio Code
  
  // C# è un linguaggio di programmazione orientato a oggetti e indipendenti dai tipi
+ 
  // Permette di compilare molti tipi di applicazioni eseguite in .NET
  // C# fa parte della famiglia dei linguaggi C
  // I programmi C# vengono eseguiti in  .NET, un sistema di esecuzioni virtuale denominato CLR e un set di librerie di classi
